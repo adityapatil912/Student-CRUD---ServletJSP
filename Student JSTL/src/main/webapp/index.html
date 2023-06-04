@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+/* Center the form on the page */
+form {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+/* Style the form fields */
+input[type="text"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the submit button */
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Add some space between the submit button and the link */
+input[type="submit"]+b {
+	margin-top: 20px;
+}
+
+/* Style the link */
+a {
+	color: #4CAF50;
+	text-decoration: none;
+	border-bottom: 1px solid #4CAF50;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	border-bottom: 2px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+	<form action="InsertData" method="get">
+		ID : <input type="text" name="id"><br> Name : <input
+			type="text" name="uname"><br> Marks : <input type="text"
+			name="marks"><br> <input type="submit" value="SUBMIT">
+	</form>
+	<b> <a href="jsp/display.jsp">SHOW ALL</a>
+	</b>
+</body>
+</html>
